@@ -1,9 +1,9 @@
-#############################################################################################
-#                                                                                           #
-# CODIGO ELABORADO COM VSCODE POR LEANDRO COELHO (devLeandroCoelho) e LUCIANO SILVA         #
-# TODOS OS DIREITOS DE USO DESTE CODIGO DEVEM SER COMUNICADOS AOS RESPECTIVOS CODIFICADORES #
-#                                                                                           #
-#############################################################################################
+##########################################################################################################
+#                                                                                                        #
+# CODIGO ELABORADO COM VSCODE POR LEANDRO COELHO (devLeandroCoelho) e LUCIANO SILVA (LucianoKkyT)        #
+# TODOS OS DIREITOS DE USO DESTE CODIGO DEVEM SER COMUNICADOS AOS RESPECTIVOS CODIFICADORES              #
+#                                                                                                        #
+##########################################################################################################
 
 # ARQUIVOS AUXILIARES DO CODIGO DO PRODUTO
 cod1 = ('100')
