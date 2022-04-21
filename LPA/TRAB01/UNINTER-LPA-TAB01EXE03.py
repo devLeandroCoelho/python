@@ -1,4 +1,3 @@
-
 altura = "1,00"
 def showMenu(nomeMenu):
     if nomeMenu == "dim":
