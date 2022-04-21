@@ -19,7 +19,7 @@ def menu (): # Função que contem o menu do app
     print('# mais de 1000 un   |              15%        #')
     print('###############################################')
 
-menu() # Exibe o menu
+menu() # Executa a função que exibe o menu
 
 vlrProd = float(input('Qual o valor do produto?')) # Questiona ao usuário o valor do Produto
 qtdeProd = int(input('Qual a quantidade deste produto?')) # Questiona ao usuário a quantidade de Produto
