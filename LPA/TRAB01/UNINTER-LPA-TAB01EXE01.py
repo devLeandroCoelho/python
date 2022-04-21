@@ -20,9 +20,8 @@ else:
     vlrComDesc = vlrPagar - (vlrPagar*0.15)
 
 
-vlrPagar = str(vlrPagar).replace('.', ',')
-vlrComDesc = str(vlrComDesc).replace('.', ',')
+vlrPagar = locale.currency(vlrPagar)
+vlrComDesc = locale.currency(vlrComDesc)
 
-print(f'Valor total a pagar sem desconto = R$ {vlrPagar}')
-print(f'Valor total a pagar com desconto = R$ {vlrComDesc}')
-locale
+print(f'Valor total a pagar sem desconto = {vlrPagar}')
+print(f'Valor total a pagar com desconto = {vlrComDesc}')
