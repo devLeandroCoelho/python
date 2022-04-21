@@ -37,7 +37,7 @@ vlr8 = (4.00)
 
 
 def menu():  # FUNÇÃO PARA IMPRIMIR O MENU DA LANCHONETE
-    print('Bem vindo(a) a Lanchonete do Luciano da Silva')
+    print('Bem vindo(a) a Lanchonete do Leandro Coelho - RU 3867885')
     print('*******************Cardápio******************')
     print('| Código |        Descrição        |    Valor   |')
     print('|  100   |     Cachorro Quente     |    9,00    |')

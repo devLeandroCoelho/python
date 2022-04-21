@@ -4,7 +4,7 @@ vlrProd = 0
 vlrPagar = 0.0
 qtdeProd = 0
 vlrComDesc = 0.0
-print('Bem Vindo a Loja do Leandro Prazeres Coelho - 3867885')
+print('Bem Vindo a Loja do Leandro Coelho - RU 3867885')
 vlrProd = float(input('Qual o valor do produto?'))
 qtdeProd = int(input('Qual a quantidade deste produto?'))
 if qtdeProd < 10:
