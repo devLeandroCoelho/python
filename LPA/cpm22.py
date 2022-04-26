@@ -1,7 +1,7 @@
 esc = 'cpm22'
 esc2 = 'cpm 22'
 art = 'oi'
-cont = 3
+cont = 9
 while (art != 'desisto'):
     art = str(input('Qual o show você gostaria de assistir ou ter assistido?'))
     if (art == esc) or (art ==esc2):
@@ -13,6 +13,9 @@ while (art != 'desisto'):
         print('... tinhamos apenas "1 minuto para o fim do mundo"')
         print('para assistir um show em uma "Tarde de Outubro" !')
         cont = 1
+        continue
+    elif (art == 'desisto') or (cont == 5):
+        print('Não desista, você pode pedir uma dica!')
         continue
     else:
         print('Não é esse o show que iremos ver... Tente novamente!!!')
