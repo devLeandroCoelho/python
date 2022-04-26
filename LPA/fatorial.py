@@ -1,3 +1,5 @@
+import math
+
 # Fatorial
 
 fat = 1
@@ -8,3 +10,6 @@ while i <= num:
     fat *= i #fat = fat * i
     i += 1
 print('Resposta: ', fat)
+
+resposta = math.factorial(num)
+print(resposta)
