@@ -12,10 +12,12 @@ while (art != 'desisto'):
         break
     elif (art == 'dica') or (cont == 0):
         os.system('clear') or None
-        print('DICA BONUS!!!\n\n')
-        print('"Dias atrás" ou foi "Ontem"')
-        print('... tinhamos apenas "1 minuto para o fim do mundo"')
-        print('para assistir um show em uma "Tarde de Outubro" !\n')
+        print('#### DICA ####\n')
+        print('"Dias atrás"..."')
+        print('...ou foi "Ontem" ???\n')
+        print('será que só tinhamos apenas "1 minuto para o fim do mundo" ... ')
+        print('... para assistir um show em uma "Tarde de Outubro" !\n')
+        print('Ou seriam todas essas nomes de musicas???\n')
         cont = 1
         continue
     elif (art == 'desisto') or (cont <= 5):
