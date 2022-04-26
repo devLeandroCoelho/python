@@ -2,7 +2,7 @@ import os
 os.system('clear') or None
 esc = 'cpm22'
 esc2 = 'cpm 22'
-art = 'oi'
+art = 'Amado Batista'
 cont = 9
 while (art != 'desisto'):
     art = str(input('Qual o show você gostaria de assistir ou ter assistido?'))
