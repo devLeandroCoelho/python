@@ -12,7 +12,7 @@ art = 'Amado Batista'
 cont = 9
 
 #LOOP INFINITO PQ ELA NÃO IRÁ DESISTIR
-while (art != 'desisto'):
+while (True):
     # A PERGUNTA DA VEZ
     art = str(input('Qual o show você gostaria de assistir ou ter assistido?'))
     
