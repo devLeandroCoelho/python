@@ -5,3 +5,12 @@ num = int(input('Quantas vezes?'))
 
 for i in range(num):
     print(nome)
+    
+# i=0
+# while i<num:
+#     print(nome)
+#     i +=1
+
+#OU
+
+# print((nome + '\n')* num)

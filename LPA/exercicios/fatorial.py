@@ -11,5 +11,6 @@ while i <= num:
     i += 1
 print('Resposta: ', fat)
 
+#usando Math
 resposta = math.factorial(num)
 print(resposta)
