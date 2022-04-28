@@ -13,10 +13,10 @@
 idade = 1000
 genero = 'D'
 while idade != 0:
-    idade = int(input('Qual a sua idade?'))
-    genero = str(input(' Digite o seu genero: M = Masculino e F = Feminino')).upper
+    idade = int(input('Qual a sua idade?\n'))
+    genero = input('Digite o seu genero: \nM = Masculino \nF = Feminino\n').upper()
     if genero != 'M' and genero != 'F':
-        print(f'Você digitou: {genero} ... carecter diferente do solicitado (M ou F)')
+        print(f'Você digitou: {genero} ... carecter diferente do solicitado (M ou F)\n')
     elif genero == 'M' and idade < 18:
         print('Boa noite rapaz.')
     elif genero == 'M' and idade >= 18:
@@ -25,5 +25,4 @@ while idade != 0:
         print('Boa noite moça.')
     elif genero == 'F' and idade >= 18:
         print('Boa noite senhora.')
-    
 
