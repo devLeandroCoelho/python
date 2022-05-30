@@ -1,9 +1,10 @@
 ##########################################################################################################
-#                                                                                                        #
-# CODIGO ELABORADO COM VSCODE POR LEANDRO COELHO (devLeandroCoelho) e LUCIANO SILVA (LucianoKkyT)        #
-# TODOS OS DIREITOS DE USO DESTE CODIGO DEVEM SER COMUNICADOS AOS RESPECTIVOS CODIFICADORES              #
-#                                                                                                        #
+#                               Leandro Coelho - RU 3867885 (devLeandroCoelho)                           #
 ##########################################################################################################
+
+#IMPORTANDO OS MODULOS e CONFIGURANDO
+import locale 
+locale.setlocale(locale.LC_ALL,'') 
 
 # ARQUIVOS AUXILIARES DO CODIGO DO PRODUTO
 cod1 = ('100')
@@ -35,10 +36,9 @@ vlr6 = (17.00)
 vlr7 = (5.00)
 vlr8 = (4.00)
 
-
 def menu():  # FUNÇÃO PARA IMPRIMIR O MENU DA LANCHONETE
     print('Bem vindo(a) a Lanchonete do Leandro Coelho - RU 3867885')
-    print('*******************Cardápio******************')
+    print('*********************Cardápio********************')
     print('| Código |        Descrição        |    Valor   |')
     print('|  100   |     Cachorro Quente     |    9,00    |')
     print('|  101   |  Cachorro Quente Duplo  |   11,00    |')
@@ -48,7 +48,7 @@ def menu():  # FUNÇÃO PARA IMPRIMIR O MENU DA LANCHONETE
     print('|  105   |         X-Tudo          |   17,00    |')
     print('|  200   |     Refrigente Lata     |    5,00    |')
     print('|  201   |        Chá Gelado       |    4,00    |')
-
+    print('*************************************************')
 
 # INICIANDO / ZERANDO VARIAVEIS
 totalPagar = 0.0
@@ -57,39 +57,39 @@ pedido = 1
 # ESTRUTURA DE REPETIÇÃO
 while pedido != 0:
     menu()  # EXIBINDO O MENU DA LANCHONETE
-    prod = str(input('Entre com o código desejado: '))
+    prod = str(input('Entre com o código desejado:\n>> '))
     if prod == cod1:  # SE O CODIGO FOR 100
         totalPagar = totalPagar + vlr1  # SOMA AO TOTAL A PAGAR O VALOR DO NOVO PRODUTO
-        print(f'Você escolheu um {prod1} no valor de {vlr1}')
+        print(f'Você escolheu um {prod1} no valor de {locale.currency(vlr1)}')
     elif prod == cod2:  # SE O CODIGO FOR 101
         totalPagar = totalPagar + vlr2  # SOMA AO TOTAL A PAGAR O VALOR DO NOVO PRODUTO
-        print(f'Você escolheu um {prod2} no valor de {vlr2}')
+        print(f'Você escolheu um {prod2} no valor de {locale.currency(vlr2)}')
     elif prod == cod3:  # SE O CODIGO FOR 102
         totalPagar = totalPagar + vlr3  # SOMA AO TOTAL A PAGAR O VALOR DO NOVO PRODUTO
-        print(f'Você escolheu um {prod3} no valor de {vlr3}')
+        print(f'Você escolheu um {prod3} no valor de {locale.currency(vlr3)}')
     elif prod == cod4:  # SE O CODIGO FOR 103
         totalPagar = totalPagar + vlr4  # SOMA AO TOTAL A PAGAR O VALOR DO NOVO PRODUTO
-        print(f'Você escolheu um {prod4} no valor de {vlr4}')
+        print(f'Você escolheu um {prod4} no valor de {locale.currency(vlr4)}')
     elif prod == cod5:  # SE O CODIGO FOR 104
         totalPagar = totalPagar + vlr5  # SOMA AO TOTAL A PAGAR O VALOR DO NOVO PRODUTO
-        print(f'Você escolheu um {prod5} no valor de {vlr5}')
+        print(f'Você escolheu um {prod5} no valor de {locale.currency(vlr5)}')
     elif prod == cod6:  # SE O CODIGO FOR 105
         totalPagar = totalPagar + vlr6  # SOMA AO TOTAL A PAGAR O VALOR DO NOVO PRODUTO
-        print(f'Você escolheu um {prod6} no valor de {vlr6}')
+        print(f'Você escolheu um {prod6} no valor de {locale.currency(vlr6)}')
     elif prod == cod7:  # SE O CODIGO FOR 200
         totalPagar = totalPagar + vlr7  # SOMA AO TOTAL A PAGAR O VALOR DO NOVO PRODUTO
-        print(f'Você escolheu um {prod7} no valor de {vlr7}')
+        print(f'Você escolheu um {prod7} no valor de {locale.currency(vlr7)}')
     elif prod == cod8:  # SE O CODIGO FOR 201
         totalPagar = totalPagar + vlr8  # SOMA AO TOTAL A PAGAR O VALOR DO NOVO PRODUTO
-        print(f'Você escolheu um {prod8} no valor de {vlr8}')
+        print(f'Você escolheu um {prod8} no valor de {locale.currency(vlr8)}')
     else:
-        print('Opção invalida')  # SE DIGITOU UMA OPÇÃO INVALIDA
-    print('Deseja pedir mais alguma coisa? ')
-    print('1 - Sim')
-    print('0 - Não')
-    pedido = int(input())
+        print('******************\n'
+              '* Opção invalida *\n'
+              '******************')  # SE DIGITOU UMA OPÇÃO INVALIDA
+        continue
+    pedido = int(input('Deseja pedir mais alguma coisa?\n1 - Sim\n0 - Não\n>> '))
     if pedido == 1:  # SE DESEJA UM NOVO PRODUTO ELE VOLTA AO INICIO DO LAÇO DE REPETIÇÃO
         continue
     elif pedido == 0:  # SE NÃO DESEJA UM NOVO PRODUTO ELE FINALIZA INFORMANDO O TOTAL A PAGAR
-        print(f'O total a ser pago é de R$ {totalPagar}')
+        print(f'O total a ser pago é de {locale.currency(totalPagar)}')
         break
